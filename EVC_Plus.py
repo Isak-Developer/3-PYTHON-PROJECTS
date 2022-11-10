@@ -18,6 +18,11 @@ else:
         print("2. Kaarka hadalka")
         print("3. Bixi Bill")
         print("4. Uwareeji EVC Plus")
+        print("5. Warbixin kooban")
+        print("6. Salaam bank")
+        print("7. Maareynta")
+        print("8. TAAJ")
+        print("9. Bill Payment")
         Option=int(input("Fadlan Option dooro "))
         if Option == 1:
             print("[-EVC PLUS-]")
@@ -53,10 +58,16 @@ else:
                     print("Waad ka laabatay lacag diridii Mahadsanid")
                 else:
                     print("MACSALAAMO!!")
+            elif Airtime == 3:
+                print("3. MIFI Packages")
+            elif Airtime == 4:
+                print("4. Ku shubo Internet")
+            elif Airtime == 5:
+                print("5. Ugu Shub qof kale (MMT)")
             else:
                 print("MACSALAAMO")
         elif Option == 3:
-            print("[-EVC PLUS-]")
+            print("3. Bixi Bill")
         elif Option == 4:
             print("[-EVC PLUS-]")
             mobile=int(input("Falan Gali mobileka"))
@@ -85,11 +96,11 @@ else:
         elif Option == 6:
             print("")
         elif Option == 7:
-            print("[-EVC PLUS-]")
+            print("7. Maareynta")
         elif Option == 8:
-            print("[-EVC PLUS-]")
+            print("8. TAAJ")
         elif Option == 9:
-            print("[-EVC PLUS-]")
+            print("9. Bill Payment")
             
         else:
             print("MACSALAAMO")
