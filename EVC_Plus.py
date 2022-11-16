@@ -39,7 +39,7 @@ else:
                 money=int(input("Fadlan Gali Lacagta "))
                 Balance-=money
                 if Balance < money:
-                    print("Haraagagu Xisaabtaada kuguma filna!")
+                    print("Haraaga Xisaabtaada kuguma filna!")
                 else:
                     print(f"Waxaad Ku shubatay ${money} Haraagagu waa ${Balance}")
             elif Airtime== 2:
@@ -50,7 +50,7 @@ else:
                 hubin=int(input("Fadlan dooro"))
                 if hubin==1:
                     if Balance < money:
-                        print("Haraagagu Xisaabtaada kuguma filna!")
+                        print("Haraaga Xisaabtaada kuguma filna!")
                     else:
                         Balance-=money
                         print(f"${money} ayaad u wareejisay {mobile}, Taarikhdu {current_time}, Haraagagu waa ${Balance}")
@@ -58,8 +58,65 @@ else:
                     print("Waad ka laabatay lacag diridii Mahadsanid")
                 else:
                     print("MACSALAAMO!!")
+                    
             elif Airtime == 3:
-                print("3. MIFI Packages")
+                print("EVCPlus")
+                print("1. Ku Shubo Data-da MIFI")
+                MIFI_DATA=int(input("Fadlan dooro"))
+                if MIFI_DATA == 1:
+                    print("-- Internet Bundle Reacharge --")
+                    print("1. Maalinle (Daily)")
+                    print("2. Isbuucle (Weekly)")
+                    print("3. Bille (Monthly)") 
+                    DATA_OPTIONS=int(input("Fadlan dooro"))
+                    if DATA_OPTIONS ==1:
+                        print("FADLAN DOORO BUNDLE KA")
+                        print("1. $1 == 2 GB")
+                        print("2. $2 == 5 GB")
+                        OPTION=int(input("Fadlan dooro"))
+                        if OPTION ==1:
+                            MIFI_USER=int(input("Fadlan Gali MIFI USER"))
+                            print(f"Ma hubtaa inaad 1$ ugu shubtid {MIFI_USER}")
+                            print("1. Haa")
+                            print("2. Maya")
+                            hubin=int(input("Fadlan Dooro"))
+                            if hubin==1:
+                                if Balance < 1:
+                                    print("Haraaga Xisaabtaada kuguma filna!")
+                                else:
+                                    Balance-=1
+                                    print(f"1$ayaad u wareejisay {MIFI_USER}, Taarikhdu {current_time},Haraagagu waa ${Balance}")
+                            elif hubin==2:
+                                print("MAHADSANID")
+                            else:
+                                print("MACSALAAMO!!")  
+                        elif OPTION == 2:
+                            MIFI_USER=int(input("Fadlan Gali MIFI USER"))
+                            print(f"Ma hubtaa inaad 2$ ugu shubtid {MIFI_USER}")
+                            print("1. Haa")
+                            print("2. Maya")
+                            hubin=int(input("Fadlan Dooro"))
+                            if hubin==1:
+                                if Balance < 2:
+                                    print("Haraaga Xisaabtaada kuguma filna!")
+                                else:
+                                    Balance-=2
+                                    print(f"1$ayaad u wareejisay {MIFI_USER}, Taarikhdu {current_time},Haraagagu waa ${Balance}")
+                            elif hubin==2:
+                                print("MAHADSANID")
+                            else:
+                                print("MACSALAAMO!!") 
+                        else:
+                            print("MACSALAAMO!!")
+                    elif DATA_OPTIONS == 2:
+                        print("Isbuucle (Weekly)")
+                    elif DATA_OPTIONS == 3:
+                        print("Bille (Monthly)")
+                    else:
+                        print("MACSALAAMO!!") 
+                else:
+                    print("MACSALAAMO!!")
+#======================================================
             elif Airtime == 4:
                 print("4. Ku shubo Internet")
             elif Airtime == 5:
